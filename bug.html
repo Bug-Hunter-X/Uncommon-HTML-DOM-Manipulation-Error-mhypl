@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    //Attempting to access an element that doesn't exist yet, causing an error.
+    document.getElementById("myDiv").innerHTML = "Hello, world!"; 
+    //The element with id="myDiv" is created after this line, hence the error
+    document.getElementById("myDiv").style.backgroundColor="red";
+    var newDiv = document.createElement("div");
+    newDiv.id = "myDiv";
+    document.body.appendChild(newDiv);
+  </script>
+</body>
+</html>
