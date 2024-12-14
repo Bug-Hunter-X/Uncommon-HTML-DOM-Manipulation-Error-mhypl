@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Ensure the element exists before manipulating it
+    var myDiv = document.getElementById("myDiv");
+
+    //Check if the element exists before manipulating it. If it does not exist, do nothing
+    if(myDiv){
+        myDiv.innerHTML = "Hello, world!";
+        myDiv.style.backgroundColor = "red";
+    }
+
+  </script>
+</body>
+</html>
